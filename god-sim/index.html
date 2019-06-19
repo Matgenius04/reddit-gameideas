@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" style="width:100%;height:100%;"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>God Sim</title>
+        <meta name="description" content="A God Sim based on https://www.reddit.com/r/gameideas/comments/c1nlzh/a_god_sim_where_you_have_to_prevent_the_humans/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="width:100%;height:100%;margin:0;overflow:hidden">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="mapTools">
+            <button id="landTool" onclick="mapTool = 'land'">Land</button>
+            <button id="waterTool" onclick="mapTool = 'ocean'">Water</button>
+            <button id="riverTool" onclick="mapTool = 'river'">River</button>
+        </div>
+        <div id="overlay">
+            <div id="start-screen">
+                <h1>Elon Musk Memes</h1>
+                <button><span>Start</span></button>
+                <button><span>Settings</span></button>
+            </div>
+        </div>
+        <canvas id="screen"></canvas>
+        <script src="main.js"></script>
+    </body>
+</html>
