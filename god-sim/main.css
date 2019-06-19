@@ -20,6 +20,9 @@ button {
 
 #overlay {
     position: absolute;
+    width: 100%;
+    height:100%;
+    display:flex;
 }
 
 button:hover {
@@ -34,4 +37,32 @@ button:hover {
 
 #start-screen button span {
     font-size: 5%;
+}
+
+#notifMessage {
+  margin: 0;
+}
+
+#notifBox {
+  /* position: fixed; */
+  background-color: #0000004d;
+  border: 2px solid #000000;
+  margin: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  /* margin:auto; */
+}
+
+#notifBoxContainer {
+  margin:auto;
+  width: 30%;
+  height:10%;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+}
+
+.showingContainer {
+  opacity: 100 !important; /* why important?      bc line 63 and ids being better than classes*/
 }
